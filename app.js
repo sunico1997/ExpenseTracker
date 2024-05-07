@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function addExpenseToDOM(expense) {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>{expense.name}</td>
-            <td>{expense.amount}</td>
-            <td>{expense.date}</td>
+            <td>${expense.name}</td>
+            <td>$${expense.amount}</td>
+            <td>${expense.date}</td>
             <td><button class="delete-btn">Delete</button></td>
         `;
         expenseList.appendChild(row);
